@@ -15,27 +15,27 @@ import androidx.room.PrimaryKey
 //    val note: String
 //)
 
-@Entity(tableName = "course")
+@Entity(tableName = DataCourseName.TABLE_NAME)
 data class Course(
     @PrimaryKey(autoGenerate = true)
-    @ColumnInfo(name = "id")
+    @ColumnInfo(name = DataCourseName.COL_ID)
     val id: Int = 0,
 
-    @ColumnInfo(name = "courseName")
+    @ColumnInfo(name = DataCourseName.COL_COURSE_NAME)
     val courseName: String,
 
-    @ColumnInfo(name = "day")
+    @ColumnInfo(name = DataCourseName.COL_DAY)
     val day: Int,
 
-    @ColumnInfo(name = "startTime")
+    @ColumnInfo(name = DataCourseName.COL_START_TIME)
     val startTime: String,
 
-    @ColumnInfo(name = "endTime")
+    @ColumnInfo(name = DataCourseName.COL_END_TIME)
     val endTime: String,
 
-    @ColumnInfo(name = "lecturer")
+    @ColumnInfo(name = DataCourseName.COL_LECTURER)
     val lecturer: String,
 
-    @ColumnInfo(name = "note")
+    @ColumnInfo(name = DataCourseName.COL_END_TIME)
     val note: String
 )
